@@ -1,0 +1,43 @@
+﻿@model IEnumerable<TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.Models.Cursos>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DataRegistro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Curso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.valor)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataRegistro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Curso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.valor)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.CursoId })*@ |
+                @*@Html.ActionLink("Details", "Details", new { id = item.CursoId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CursoId })*@
+                <button class="btn btn-default details" data-id="@item.CursoId"><i class="glyphicon glyphicon-file"></i></button>
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+

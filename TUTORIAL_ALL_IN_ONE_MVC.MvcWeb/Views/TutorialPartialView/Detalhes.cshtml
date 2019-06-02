@@ -1,0 +1,39 @@
+﻿@model TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.Models.Cursos
+
+<div>
+    <h4>Cursos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CursoId)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Curso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CursoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,49 @@
+﻿@model TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.Models.Cursos
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="container">
+    @Html.Action("ListarCursos");
+</div>
+<div id="Modal">
+    <div class="modal fade" tabindex="-1" role="dialog" id="ModalDetalhes">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>@Html.DisplayNameFor(model => model.CursoId) : @Html.DisplayFor(model => model.CursoId)</p>
+                    <p>@Html.DisplayNameFor(model => model.Curso) : @Html.DisplayFor(model => model.Curso)</p>
+                    <p>@Html.DisplayNameFor(model => model.DataRegistro) : @Html.DisplayFor(model => model.DataRegistro)</p>
+                    <p>@Html.DisplayNameFor(model => model.valor) : @Html.DisplayFor(model => model.valor)</p>
+
+                  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+@section scripts{
+    <script>
+        $(function () {
+            $(".details").click(function () {
+                var id = $(this).attr("data-id");
+                $("#ModalDetalhes").load("Details?id=" + id, function () {
+                    $("#ModalDetalhes").modal('show');
+                });
+
+            });
+        })
+    </script>
+}
