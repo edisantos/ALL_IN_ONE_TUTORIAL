@@ -1,0 +1,71 @@
+﻿@model TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.Models.Cursos
+@{
+    ViewBag.Title = "Registro";
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+    AjaxOptions options = new AjaxOptions
+    {
+        // Confirm = "Are you sure to save record?",
+        OnBegin = "OnBeginMethod",
+        OnFailure = "OnFailtureMethod",
+        OnSuccess = "OnSuccessMethod",
+        OnComplete = "OnCompleteMethod"
+
+    };
+}
+
+<h2>Registro</h2>
+<div class="container">
+    <br /><br />
+    @using (Ajax.BeginForm(options))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary()
+
+            <div class="form-group">
+                <label>Curso</label>
+                @Html.TextBoxFor(m => m.Curso, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Valor</label>
+                @Html.TextBoxFor(m => m.valor, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-floppy-saved">Registrar</span>
+                </button>
+            </div>
+        </div>
+    }
+    <hr />
+    <div class="form-group">
+
+        <div class="alert alert-success">
+            <label id="labelAjaxStatus"></label>
+        </div>
+
+
+
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-sm-4">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            
+        </div>
+    </div>
+   
+</div>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script src="~/Scripts/AjaxFormulario.js"></script>
+

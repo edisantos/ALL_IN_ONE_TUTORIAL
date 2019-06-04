@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+table th{
+	background-color:#ff6a00;
+	color:#fff;
+	border:1px solid;
+	text-align:center;
+}
+table td {
+   
+	text-align: center;
+}

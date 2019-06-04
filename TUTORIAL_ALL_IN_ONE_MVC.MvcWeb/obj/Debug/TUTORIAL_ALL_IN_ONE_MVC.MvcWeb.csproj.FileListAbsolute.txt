@@ -48,6 +48,8 @@ F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\roslyn\vbc
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\roslyn\VBCSCompiler.exe
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\roslyn\VBCSCompiler.exe.config
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\Antlr3.Runtime.dll
+F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\DataTables.AspNet.Core.dll
+F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\DataTables.AspNet.Mvc5.dll
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\EntityFramework.dll
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\EntityFramework.SqlServer.dll
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -80,10 +82,9 @@ F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\pt-br\Syst
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\pt-br\System.Web.WebPages.resources.dll
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\bin\pt-br\System.Web.WebPages.Razor.resources.dll
-F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\obj\Debug\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.csprojAssemblyReference.cache
+F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\obj\Debug\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.Migrations.InitialModel.resources
+F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\obj\Debug\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.csproj.GenerateResource.cache
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\obj\Debug\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.csproj.CoreCompileInputs.cache
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\obj\Debug\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.csproj.CopyComplete
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\obj\Debug\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.dll
 F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\obj\Debug\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.pdb
-F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\obj\Debug\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.Migrations.InitialModel.resources
-F:\Estudos MVC\TUTORIAL_ALL_IN_ONE\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb\obj\Debug\TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.csproj.GenerateResource.cache
