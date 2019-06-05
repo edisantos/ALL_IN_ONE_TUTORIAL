@@ -36,7 +36,9 @@ namespace TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                   
                     model.DataRegistro = DateTime.Now;
+                    model.AutorId = 1;
                     db.Cursos.Add(model);
                     db.SaveChanges();
                     return RedirectToAction("Index");
@@ -69,9 +71,17 @@ namespace TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.Controllers
         [HttpGet]
         public JsonResult ListaCursos()
         {
+            db.Configuration.ProxyCreationEnabled = false;
+            db.Configuration.LazyLoadingEnabled = false;
             var result = db.Cursos.ToList();
-
             return Json(result, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult Contar()
+        {
+           
+          
+            var ResultCount = db.Cursos.Count();
+            return Json(ResultCount, JsonRequestBehavior.AllowGet);
         }
     }
 }

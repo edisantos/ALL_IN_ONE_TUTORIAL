@@ -13,7 +13,7 @@ function OnSuccessMethod(data) {
 }
 function OnCompleteMethod(data, status) {
     if (!isError) {
-        $("#labelAjaxStatus").text("Registro Completo! ");
+        $("#labelAjaxStatus").text("Registro feito com sucesso! ");
         $("#labelAjaxStatus").css("color","green");
         ListarCursos();
     
@@ -28,11 +28,12 @@ function ListarCursos() {
             //Anexa cada linha na tabela HTML
             for (var i = 0; i < json.length; i++) {
                 tr = $('<tr/>');
+                tr.append("<td>" + json[i].index + "</td>");
                 tr.append("<td>" + json[i].Curso + "</td>");
                 tr.append("<td>" + json[i].valor + "</td>");
-              
+                tr.append("<td>" + json[i].AutorId + "</td>");
 
-                $('table').append(tr);
+                $('table').append(tr).index();
             }
         });
 }

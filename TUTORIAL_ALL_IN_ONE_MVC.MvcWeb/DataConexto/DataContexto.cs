@@ -13,6 +13,7 @@ namespace TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.DataConexto
         }
 
         public DbSet<Cursos> Cursos { get; set; }
+        public DbSet<Autor> Autor { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

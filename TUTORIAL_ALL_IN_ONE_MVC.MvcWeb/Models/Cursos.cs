@@ -24,5 +24,8 @@ namespace TUTORIAL_ALL_IN_ONE_MVC.MvcWeb.Models
         [Column(TypeName = "decimal")]
         [Required]
         public decimal valor { get; set; }
+        public int AutorId { get; set; }
+        public virtual Autor Autor { get; set; }
+
     }
 }
