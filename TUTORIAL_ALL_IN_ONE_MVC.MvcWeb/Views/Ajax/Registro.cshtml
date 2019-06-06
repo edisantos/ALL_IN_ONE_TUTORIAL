@@ -82,17 +82,19 @@
         function (json) {
             var tr;
             //Anexa cada linha na tabela HTML
+            
+             $('table tr').remove();
             for (var i = 0; i < json.length; i++) {
                // var row_index = $(this).parent('table').index(); 
                 tr = $('<tr/>');
-                tr.append("<td>" + json[i].index + "</td>");
+                tr.append("<td>" + i + "</td>");
                 tr.append("<td>" + json[i].Curso + "</td>");
                 tr.append("<td>" + json[i].valor + "</td>");
                  tr.append("<td>" + json[i].AutorId + "</td>");
               
               
-
-                $('table').append(tr).index();;
+                 //$('table tr').remove();
+                 $('table').append(tr).index();;
                 
             }
             
